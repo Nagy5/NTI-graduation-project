@@ -1,0 +1,17 @@
+<div class="add-service-container">
+  <h2>Add Service</h2>
+  <form (ngSubmit)="submitForm()" [formGroup]="serviceForm">
+    <div>
+      <label for="serviceName">Service Name:</label>
+      <input id="serviceName" formControlName="serviceName"
+        [ngClass]="formStatus === 'valid' ? 'valid-input' : 'invalid-input'" placeholder="Enter service name" />
+    </div>
+    <div>
+      <label for="serviceDescription">Service Description:</label>
+      <textarea id="serviceDescription" formControlName="serviceDescription"
+        [ngClass]="formStatus === 'valid' ? 'valid-input' : 'invalid-input'" placeholder="Enter service description"
+        rows="4"></textarea>
+    </div>
+    <button type="submit" [disabled]="serviceForm.invalid">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,59 @@
+.add-service-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+}
+
+label {
+  margin: 10px 0 5px;
+  display: block;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.valid-input {
+  border-color: green;
+}
+
+.invalid-input {
+  border-color: red;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}

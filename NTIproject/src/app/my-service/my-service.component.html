@@ -1,0 +1,13 @@
+<body>
+  <div class="container">
+    <div class="card" *ngFor="let service of services">
+      <img width="150" src="images/flutter.png" alt="" />
+      <h3>{{ service.title }}</h3>
+      <p>{{ service.description }}</p>
+      <button>Read More</button>
+      <button style="background-color: red" *ngIf="isLoggedIn" (click)="deleteService(service._id)" class="button-56">
+        Delete Service
+      </button>
+    </div>
+  </div>
+</body>
