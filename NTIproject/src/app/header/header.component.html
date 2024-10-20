@@ -14,12 +14,22 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav mx-auto">
-        <a class="nav-link active" aria-current="page" href="home">Home</a>
-        <a class="nav-link" href="services">Services</a>
-        <a class="nav-link" href="about">About</a>
-        <a class="nav-link" href="contact us">Contact us</a>
-        <a class="nav-link" href="dashboard">Dashboard</a>
-        <a class="button-56" href="login">Login</a>
+        <a
+          class="nav-link active"
+          aria-current="page"
+          routerLinkActive="active"
+          routerLink="home"
+          >Home</a
+        >
+        <a class="nav-link" routerLinkActive="active" routerLink="services"
+          >Services</a
+        >
+        <a class="nav-link" routerLinkActive="active" routerLink="about"
+          >About</a
+        >
+        <a class="nav-link" routerLinkActive="active" routerLink="contact us"
+          >Contact us</a
+        >
         <a *ngIf="isLoggedIn" (click)="logout()" class="button-56" role="button"
           >Logout</a
         >

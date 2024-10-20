@@ -51,6 +51,7 @@ body {
   font-size: 0.8em;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  overflow: hidden;
 }
 .card:hover p {
   color: #fff;

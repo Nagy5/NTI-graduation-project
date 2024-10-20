@@ -1,0 +1,12 @@
+<form [formGroup]="homeForm" (ngSubmit)="saveInfo()">
+  <div class="college mb-3">
+    <h3>Update Home data</h3>
+
+    <label class="form-label">Title</label>
+    <input type="text" class="form-control" formControlName="title" />
+
+    <label class="form-label">Subtitle</label>
+    <input type="input" class="form-control" formControlName="subtitle" />
+  </div>
+  <button class="btn btn-success">save data</button>
+</form>

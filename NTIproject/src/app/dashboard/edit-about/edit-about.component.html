@@ -1,0 +1,16 @@
+<form [formGroup]="aboutForm" (ngSubmit)="saveInfo()">
+  <div class="college mb-3">
+    <h3>Update About information</h3>
+
+    <label class="form-label">Title</label>
+    <input type="text" class="form-control" formControlName="title" />
+
+    <label class="form-label">About Description</label>
+    <textarea
+      type="textarea"
+      class="form-control"
+      formControlName="description"
+    ></textarea>
+  </div>
+  <button class="btn btn-success">save data</button>
+</form>

@@ -1,1 +1,12 @@
-<body></body>
+<body>
+  <div class="container">
+    <h1 *ngIf="homeData.length > 0">{{ homeData[0].title }}</h1>
+    <h2 class="text" *ngIf="homeData.length > 0">
+      {{ homeData[0].subtitle + "." }}
+    </h2>
+
+    <div class="load" *ngIf="homeData.length === 0">
+      <p>Loading...</p>
+    </div>
+  </div>
+</body>

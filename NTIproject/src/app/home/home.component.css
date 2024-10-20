@@ -10,6 +10,50 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("/assets/images/1.jpg");
+  background-color: #1e1b1b;
   background-size: cover;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 150px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.text {
+  font-size: 2em;
+  letter-spacing: 10px;
+  font-family: monospace;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(15), cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
 }

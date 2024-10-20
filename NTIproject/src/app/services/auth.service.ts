@@ -6,7 +6,7 @@ import { BehaviorSubject, Observable, tap } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
-  apiURL = 'https://dummyjson.com/auth/login'; 
+  userApi = 'http://localhost:3000/admin/login';
 
   private tokenSubject: BehaviorSubject<string | null> = new BehaviorSubject<
     string | null
@@ -19,13 +19,12 @@ export class AuthService {
     }
   }
 
-  login(username: string, password: string): Observable<any> {
-    return this._http.post<any>(this.apiURL, { username, password }).pipe(
+  login(email: string, password: string): Observable<any> {
+    return this._http.post<any>(this.userApi, { email, password }).pipe(
       tap((res) => {
-        const token = res.token;
+        const token = res.accessToken;
         localStorage.setItem('accesstoken', token);
         this.tokenSubject.next(token);
-        console.log(res);
       })
     );
   }
@@ -34,8 +33,8 @@ export class AuthService {
     return this.tokenSubject.asObservable();
   }
 
-  logout(): void {
-    localStorage.removeItem('accesstoken');
+  logOut() {
+    localStorage.removeItem('accesstoken'); // Remove unnecessary check
     this.tokenSubject.next(null);
   }
 

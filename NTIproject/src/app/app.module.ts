@@ -14,7 +14,10 @@ import { MyServiceComponent } from './my-service/my-service.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AddComponent } from './dashboard/add/add.component';
-import { DeleteComponent } from './dashboard/delete/delete.component';
+import { EditHomeComponent } from './dashboard/edit-home/edit-home.component';
+import { EditAboutComponent } from './dashboard/edit-about/edit-about.component';
+import { EditContactComponent } from './dashboard/edit-contact/edit-contact.component';
+import { SideBarComponent } from './dashboard/side-bar/side-bar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { DeleteComponent } from './dashboard/delete/delete.component';
     HeaderComponent,
     FooterComponent,
     AddComponent,
-    DeleteComponent,
+    EditHomeComponent,
+    EditAboutComponent,
+    EditContactComponent,
+    SideBarComponent,
   ],
   imports: [
     BrowserModule,

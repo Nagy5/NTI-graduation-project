@@ -1,15 +1,21 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 body {
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("/assets/images/9.jpg");
+  background-color: #1e1b1b;
+
   background-size: cover;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: white;
 }

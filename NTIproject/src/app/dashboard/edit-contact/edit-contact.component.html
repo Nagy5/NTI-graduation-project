@@ -1,0 +1,12 @@
+<form [formGroup]="contactForm" (ngSubmit)="saveInfo()">
+  <div class="college mb-3">
+    <h3>Update Contact information</h3>
+
+    <label class="form-label">Number</label>
+    <input type="text" class="form-control" formControlName="number" />
+
+    <label class="form-label">Email</label>
+    <input type="email" class="form-control" formControlName="email" />
+  </div>
+  <button class="btn btn-success">save data</button>
+</form>

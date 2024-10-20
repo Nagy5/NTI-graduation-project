@@ -1,1 +1,10 @@
-<body></body>
+<body>
+  <div class="container">
+    <h1 *ngIf="aboutData.length > 0">{{ aboutData[0].title }}</h1>
+    <p *ngIf="aboutData.length > 0">{{ aboutData[0].description }}></p>
+
+    <div class="load" *ngIf="aboutData.length === 0">
+      <span>Loading...</span>
+    </div>
+  </div>
+</body>

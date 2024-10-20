@@ -40,3 +40,9 @@
     padding: 0 40px;
   }
 }
+
+.active {
+  font-weight: bold;
+  /* text-decoration: underline; */
+  border-bottom: solid 3px #8c52ff;
+}

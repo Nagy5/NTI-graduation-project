@@ -1,19 +1,18 @@
-const mongoose = require("mongoose")                         
-const { Schema } = mongoose;                                                 
-const DB_URL = process.env.MONGO_URL
+const mongoose = require("mongoose");
 
-const serviceSchema = new mongoose.Schema({             
-  title: {
-    type: String,
-    required: true
+const serviceSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: true,
+    },
+    description: {
+      type: String,
+      required: [true, "description is required"],
+    },
   },
-  description: {
-    type: String,
-    required: [true, 'description is required'],
-  },
-},
   { timestamps: true }
-
-)
-const Service = mongoose.models.Service || mongoose.model('Service', serviceSchema);
+);
+const Service =
+  mongoose.models.Service || mongoose.model("Service", serviceSchema);
 module.exports = Service;
